@@ -186,15 +186,15 @@ header .centerbox h2 a {font-size: 18px;}
 #section_box #part3 .part3_3 .reviewbox .bubble .detail {margin: 0; text-align: left;font-size:clamp(15px,0.938vw,18px);color: var(--textC1);}
 #section_box #part3 .part3_3 .reviewbox .bubble .writer {margin-top: 8px;text-align: right;font-size: clamp(14px,0.833vw,16px);color: var(--textC4);}
 #section_box #part3 .part3_3 .reviewbox .bubble .tail {position: absolute;bottom: -20px; width: 50px;height: 50px; background-size: contain; background-repeat: no-repeat;}
-#section_box #part3 .part3_3 .reviewbox .review:nth-child(odd) .tail {left: -25px;background-image: url(/imges/boxtail_L.png);}
+#section_box #part3 .part3_3 .reviewbox .review:nth-child(odd) .tail {left: -25px;background-image: url(/images/boxtail_L.png);}
 #section_box #part3 .part3_3 .reviewbox .review:nth-child(even) {flex-direction: row-reverse;}
-#section_box #part3 .part3_3 .reviewbox .review:nth-child(even) .tail {right: -25px;background-image: url(/imges/boxtail_R.png);}
+#section_box #part3 .part3_3 .reviewbox .review:nth-child(even) .tail {right: -25px;background-image: url(/images/boxtail_R.png);}
 #section_box #part3 .part3_3 .reviewbox .review:hover .bubble {transform: scale(1.02);transition: transform 0.3s ease}
 
 
 #section_box #part3 .part3_3 .reviewbox .textbox {width: 450px;height: 180px;background: var(--bgC);border-radius: 30px;}
-#section_box #part3 .part3_3 .reviewbox .textbox:before {content: "";background: url(/imges/boxtail_L.png);}
-#section_box #part3 .part3_3 .reviewbox .textbox p span {color: var(--textC5);font-weight: 500;;}
+#section_box #part3 .part3_3 .reviewbox .textbox:before {content: "";background: url(/images/boxtail_L.png);}
+#section_box #part3 .part3_3 .reviewbox .textbox p span {color: var(--textC5);font-weight: 500;}
 
 #section_box #part3 .part3_4 {background: var(--bgC);}
 #section_box #part3 .part3_4 .centerbox,footer {padding: 5% 0;}
