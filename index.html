@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entro — 스마트 무인 운영 솔루션</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 로봇: JS 사인파로 위치/각도 제어 -->
+        <img id="robot" src="images/robot.svg" alt="" aria-hidden="true">
+
+        <header>
+            <div class="centerbox">
+                <h1 class="logo"><a href="#"><img src="images/entro-logo.svg" alt="Entro"></a></h1>
+                <nav>
+                    <ul class="gnb">
+                        <li><a href="#solutions">서비스소개</a></li>
+                        <li><a href="#features">주요기능</a></li>
+                        <li><a href="#cases">도입사례</a></li>
+                        <li><a href="#pricing">요금제</a></li>
+                        <li><a href="#reviews">후기</a></li>
+                    </ul>
+                </nav>
+                <a class="btn-b" href="#">무료 데모 신청</a>
+            </div>
+        </header>
+
+        <main>
+
+            <!-- 01. Hero -->
+            <section id="hero" class="hero">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/visual-2-mobile.jpg">
+                    <img src="images/visual-2-main.jpg" alt="Entro 무인 매장 운영 솔루션">
+                </picture>
+                <div class="centerbox">
+                    <div class="hero-content">
+                        <p class="hero-label">무인 운영 올인원 솔루션</p>
+                        <h2>무인 매장,<br>이제 혼자서도<br>완벽하게.</h2>
+                        <p class="hero-sub">출입부터 결제, 매출 관리까지<br>월 39,000원으로 시작하는 스마트 운영 시스템</p>
+                        <div class="btn-box">
+                            <a class="btn-b" href="#">지금 무료로 체험하기</a>
+                            <a class="btn-w" href="#pricing">도입 비용 알아보기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 02. Stats Banner -->
+            <section class="stats-banner" aria-label="주요 통계">
+                <div class="centerbox">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number-wrap">
+                                <strong class="stat-number" data-target="260" aria-live="polite">0</strong>
+                                <span class="stat-unit">만원</span>
+                            </div>
+                            <p>월 평균 인건비 지출</p>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <div class="stat-number-wrap">
+                                <strong class="stat-number" data-target="8" aria-live="polite">0</strong>
+                                <span class="stat-unit">시간</span>
+                            </div>
+                            <p>하루 평균 매장 공백</p>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <div class="stat-number-wrap">
+                                <strong class="stat-number" data-target="73" aria-live="polite">0</strong>
+                                <span class="stat-unit">%</span>
+                            </div>
+                            <p>운영 비효율 호소 비율</p>
+                        </div>
+                    </div>
+                    <p class="stats-sub">직원이 없으면 매장을 비워야 하고, 직원이 있으면 인건비가 새나갑니다.<br>Entro는 이 두 가지 문제를 동시에 해결합니다.</p>
+                </div>
+            </section>
+
+            <!-- 03. Solutions -->
+            <section id="solutions" class="solutions" aria-label="서비스 소개">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <h2>Entro가 해결하는 <span>3가지</span></h2>
+                    </div>
+                    <div class="solution-cards">
+                        <article class="solution-card">
+                            <figure>
+                                <img src="images/system1.jpg" alt="출입 인증 시스템">
+                            </figure>
+                            <div class="solution-info">
+                                <h3>출입 인증 시스템</h3>
+                                <p>QR·NFC·지문으로 안전한 출입 관리</p>
+                            </div>
+                            <div class="solution-overlay" aria-hidden="true">
+                                <h3>출입 인증 시스템</h3>
+                                <p>QR 코드, NFC, 지문, 앱 인증까지 다양한 방식으로 안전하고 스마트한 출입 관리를 실현합니다.</p>
+                                <a class="btn-outline" href="#features">자세히 보기</a>
+                            </div>
+                        </article>
+                        <article class="solution-card">
+                            <figure>
+                                <img src="images/system2.jpg" alt="무인 결제 키오스크">
+                            </figure>
+                            <div class="solution-info">
+                                <h3>무인 결제 키오스크</h3>
+                                <p>카드·간편결제 빠른 무인 결제</p>
+                            </div>
+                            <div class="solution-overlay" aria-hidden="true">
+                                <h3>무인 결제 키오스크</h3>
+                                <p>신용카드, 애플페이, 카카오페이 등 모든 결제 수단을 지원하는 직관적인 무인 키오스크입니다.</p>
+                                <a class="btn-outline" href="#features">자세히 보기</a>
+                            </div>
+                        </article>
+                        <article class="solution-card">
+                            <figure>
+                                <img src="images/system3.jpg" alt="운영 자동화">
+                            </figure>
+                            <div class="solution-info">
+                                <h3>운영 자동화</h3>
+                                <p>실시간 매출·CCTV·예약 통합 관리</p>
+                            </div>
+                            <div class="solution-overlay" aria-hidden="true">
+                                <h3>운영 자동화</h3>
+                                <p>실시간 로그, CCTV 연동, 정기결제 자동화까지 매장 운영의 모든 것을 한 곳에서 관리합니다.</p>
+                                <a class="btn-outline" href="#features">자세히 보기</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 04. Features (Tab + Bento Grid) -->
+            <section id="features" class="features" aria-label="주요 기능">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <h2>핵심 기능 <span>한눈에 보기</span></h2>
+                    </div>
+                    <div class="tab-buttons" role="tablist" aria-label="기능 카테고리">
+                        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-access" data-tab="access">출입 인증</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-kiosk" data-tab="kiosk">결제 키오스크</button>
+                        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-auto" data-tab="auto">운영 자동화</button>
+                    </div>
+                    <div class="tab-panels">
+
+                        <!-- 출입 인증 -->
+                        <div class="tab-panel active" id="tab-access" role="tabpanel">
+                            <div class="bento-grid">
+                                <article class="bento-card bento-wide">
+                                    <figure><img src="images/icon-1-1.png" alt="QR NFC 지문 인증"></figure>
+                                    <div class="bento-text">
+                                        <h4>QR·NFC·지문 다중 인증</h4>
+                                        <p>상황에 맞는 다양한 인증 방식으로 빠르고 안전한 출입 관리</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card">
+                                    <figure><img src="images/icon-1-5.png" alt="비인가자 차단"></figure>
+                                    <div class="bento-text">
+                                        <h4>비인가자 자동 차단</h4>
+                                        <p>미등록자 스캔 시 즉시 차단</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card">
+                                    <figure><img src="images/icon-1-6.png" alt="스마트 출입 설정"></figure>
+                                    <div class="bento-text">
+                                        <h4>스마트 출입 설정</h4>
+                                        <p>시간대·그룹별 세분화 설정</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card bento-wide">
+                                    <figure><img src="images/icon-1-8.png" alt="멀티 지점 관리"></figure>
+                                    <div class="bento-text">
+                                        <h4>멀티 지점 통합 관리</h4>
+                                        <p>여러 지점의 출입 이력을 하나의 앱에서 한 번에 관리</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- 결제 키오스크 -->
+                        <div class="tab-panel" id="tab-kiosk" role="tabpanel" hidden>
+                            <div class="bento-grid">
+                                <article class="bento-card bento-wide">
+                                    <figure><img src="images/icon-2-1.png" alt="간편결제 지원"></figure>
+                                    <div class="bento-text">
+                                        <h4>모든 간편결제 지원</h4>
+                                        <p>애플페이·삼성페이·카카오페이·네이버페이 등 모든 결제 수단 지원</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card">
+                                    <figure><img src="images/icon-2-2.png" alt="직관적 UI"></figure>
+                                    <div class="bento-text">
+                                        <h4>직관적인 UI</h4>
+                                        <p>누구나 쉽게 사용하는 터치 인터페이스</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card">
+                                    <figure><img src="images/icon-2-4.png" alt="실시간 매출 연동"></figure>
+                                    <div class="bento-text">
+                                        <h4>실시간 매출 연동</h4>
+                                        <p>매출 현황 실시간 확인</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card bento-wide">
+                                    <figure><img src="images/icon-2-8.png" alt="UI 커스터마이징"></figure>
+                                    <div class="bento-text">
+                                        <h4>브랜드 맞춤 UI 커스터마이징</h4>
+                                        <p>브랜드 아이덴티티를 담은 맞춤형 키오스크 인터페이스 제공</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- 운영 자동화 -->
+                        <div class="tab-panel" id="tab-auto" role="tabpanel" hidden>
+                            <div class="bento-grid">
+                                <article class="bento-card bento-wide">
+                                    <figure><img src="images/icon-3-2.png" alt="CCTV 센서 연동"></figure>
+                                    <div class="bento-text">
+                                        <h4>CCTV·센서 실시간 연동</h4>
+                                        <p>이상 상황 발생 시 즉시 라이브 확인 및 관리자 알림 전송</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card">
+                                    <figure><img src="images/icon-3-3.png" alt="풀 오토 시스템"></figure>
+                                    <div class="bento-text">
+                                        <h4>풀 오토 시스템</h4>
+                                        <p>정기결제·예약 반복 업무 자동화</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card">
+                                    <figure><img src="images/icon-3-5.png" alt="실시간 알림"></figure>
+                                    <div class="bento-text">
+                                        <h4>실시간 상황 알림</h4>
+                                        <p>특이사항 즉시 푸쉬 알림</p>
+                                    </div>
+                                </article>
+                                <article class="bento-card bento-wide">
+                                    <figure><img src="images/icon-3-8.png" alt="올인원 솔루션"></figure>
+                                    <div class="bento-text">
+                                        <h4>업종별 올인원 솔루션</h4>
+                                        <p>타겟 설정·이벤트 알림·맞춤 설정까지 각 업장에 최적화된 통합 솔루션</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 05. Cases -->
+            <section id="cases" class="cases" aria-label="도입 사례">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <h2>다양한 업종에서 <span>검증된 성능</span></h2>
+                    </div>
+                    <div class="case-cards">
+                        <article class="case-card">
+                            <figure>
+                                <img src="images/place1.jpg" alt="무인 헬스장 도입 사례">
+                            </figure>
+                            <div class="case-content">
+                                <span class="case-tag">#헬스장 #PT샵 #필라테스</span>
+                                <h3>무인 헬스장 도입</h3>
+                                <p class="case-stat">월 <strong>300만원</strong> 절감</p>
+                                <ul class="case-list">
+                                    <li>PT 예약 자동화로 중복 예약 제로</li>
+                                    <li>이벤트 알림으로 장기 고객 40% 증가</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="case-card">
+                            <figure>
+                                <img src="images/place2.jpg" alt="공유 오피스 도입 사례">
+                            </figure>
+                            <div class="case-content">
+                                <span class="case-tag">#공유오피스 #회의실 #코워킹</span>
+                                <h3>공유 오피스 도입</h3>
+                                <p class="case-stat">예약 중복 <strong>0건</strong></p>
+                                <ul class="case-list">
+                                    <li>오피스·회의실 통합 예약 관리</li>
+                                    <li>재방문 고객 월 평균 35% 증가</li>
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="case-card">
+                            <figure>
+                                <img src="images/place3.jpg" alt="독서실 스터디카페 도입 사례">
+                            </figure>
+                            <div class="case-content">
+                                <span class="case-tag">#독서실 #스터디카페 #무인매장</span>
+                                <h3>독서실·스터디카페</h3>
+                                <p class="case-stat">인건비 <strong>60%</strong> 감소</p>
+                                <ul class="case-list">
+                                    <li>정기권 자동 결제로 매출 안정화</li>
+                                    <li>지정 자리 예약 시스템 완전 자동화</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 06. Process -->
+            <section id="process" class="process">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <h2>3단계면 <span>오늘부터 무인 운영</span></h2>
+                    </div>
+                    <p class="process-sub">평균 설치 소요시간 4시간. 당일 운영 시작 가능합니다.</p>
+                    <div class="process-list">
+                        <div class="process-item">
+                            <div class="process-number"><span>01</span></div>
+                            <div class="process-content">
+                                <h3>무료 상담</h3>
+                                <p>업종과 규모에 맞는<br>전문가 1:1 상담</p>
+                            </div>
+                        </div>
+                        <div class="process-connector" aria-hidden="true"></div>
+                        <div class="process-item">
+                            <div class="process-number"><span>02</span></div>
+                            <div class="process-content">
+                                <h3>맞춤 솔루션</h3>
+                                <p>최적화된 시스템<br>제안·설치·교육</p>
+                            </div>
+                        </div>
+                        <div class="process-connector" aria-hidden="true"></div>
+                        <div class="process-item">
+                            <div class="process-number"><span>03</span></div>
+                            <div class="process-content">
+                                <h3>즉시 운영 시작</h3>
+                                <p>설치 당일부터<br>무인 운영 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trust-numbers">
+                        <div class="trust-item">
+                            <strong>
+                                <span class="trust-count" data-target="60000" aria-live="polite">0</span>
+                                <span class="trust-unit">+</span>
+                            </strong>
+                            <p>누적 도입 매장</p>
+                        </div>
+                        <div class="trust-item">
+                            <strong>
+                                <span class="trust-count" data-target="62" aria-live="polite">0</span>
+                                <span class="trust-unit">%</span>
+                            </strong>
+                            <p>평균 인건비 절감</p>
+                        </div>
+                        <div class="trust-item">
+                            <strong>
+                                <span class="trust-count" data-target="4.9" aria-live="polite" data-decimal="1">0</span>
+                                <span class="trust-unit">/5</span>
+                            </strong>
+                            <p>고객 만족도</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 07. Reviews -->
+            <section id="reviews" class="reviews">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <h2>실제 운영자들의 <span>이야기</span></h2>
+                    </div>
+                    <div class="review-box">
+                        <div class="review">
+                            <div class="img-box">
+                                <img src="images/human1.png" alt="헬스장 오너 후기">
+                            </div>
+                            <div class="bubble">
+                                <p class="detail">무인 헬스장을 개업하고 생각보다 관리할게 많아서 결국에는 직원을 고용했는데 <span>인건비</span>가 너무 크더라고요. <span>Entro</span>를 만난 뒤로는 <span>자동 PT 예약 관리 시스템</span>으로 트레이너도 시간별로 고용해서 운영할 수 있고, 중복 예약도 생기지 않아서 너무 만족합니다.</p>
+                                <p class="writer">-역삼동 **헬스장 오너 최*훈 님</p>
+                                <span class="tail" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="img-box">
+                                <img src="images/human2.png" alt="공유오피스 오너 후기">
+                            </div>
+                            <div class="bubble">
+                                <p class="detail">공유오피스를 운영하면서 예약 관리가 가장 힘들었는데 <span>Entro</span>를 사용한 뒤로 스트레스에서 해소되었어요! 오피스 예약과 회의실 예약을 <span>통합 예약 관리 시스템</span>으로 손쉽게 관리 가능해서 관리가 편해졌고 <span>이벤트 푸쉬 알림</span>을 사용했더니 <span>재방문 고객</span>도 늘어났어요!</p>
+                                <p class="writer">-정자동 **오피스 오너 김*아 님</p>
+                                <span class="tail" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="img-box">
+                                <img src="images/human3.png" alt="독서실 오너 후기">
+                            </div>
+                            <div class="bubble">
+                                <p class="detail">독서실 운영하면서 <span>직원 관리</span>가 가장 힘들었는데 <span>Entro</span>를 사용한 뒤로 스트레스에서 해소되었어요! 정기권 자동 결제 시스템도 있어서 <span>인건비</span>는 줄고 <span>매출</span>은 오히려 늘어나는 경험을 한 뒤로 주변 지인들에게도 추천하고 있어요~</p>
+                                <p class="writer">-성북동 **독서실 오너 김*지 님</p>
+                                <span class="tail" aria-hidden="true"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 08. Pricing -->
+            <section id="pricing" class="pricing">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <!-- <h2>설치비 <span>0원,</span> 숨겨진 비용 <span>ZERO</span></h2> -->
+                        <!-- <h2>설치비 0원, <span>숨겨진 비용도 없습니다.</span></h2> -->
+                        <h2><span>0원</span>으로 시작하는 무인 운영</h2>
+                    </div>
+                    <p class="pricing-sub">설치비·유지보수비 포함. 도입 후 평균 3개월 이내 인건비 전액 회수.</p>
+                    <ul class="pricing-list">
+                        <li>
+                            <h3>초기 설치비</h3>
+                            <strong>무료</strong>
+                        </li>
+                        <li>
+                            <h3>월 이용료</h3>
+                            <strong>39,000원~</strong>
+                        </li>
+                        <li>
+                            <h3>고객 지원</h3>
+                            <strong>24시간</strong>
+                        </li>
+                    </ul>
+                    <div class="btn-box">
+                        <a class="btn-b" href="#">무료 데모 신청</a>
+                        <a class="btn-w" href="#">1:1 도입 상담</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. FAQ -->
+            <section class="faq">
+                <div class="centerbox">
+                    <div class="title-box">
+                        <h2><span>자주 묻는 질문</span></h2>
+                    </div>
+                    <ul class="faq-list">
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                무인 운영 초보자도 쉽게 가능한가요?
+                                <svg class="faq-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>네, Entro는 처음 무인 운영을 시작하는 분들을 위해 설계되었습니다. 전용 앱 하나로 출입 관리, 매출 확인, 고객 알림까지 모두 처리할 수 있으며, 설치 후 전문 기사가 직접 운영 교육을 제공합니다. 도입 후에도 24시간 고객 지원을 통해 언제든지 도움을 받으실 수 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                보안 문제는 없나요?
+                                <svg class="faq-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Entro는 QR, NFC, 지문 등 다중 인증 방식과 비인가자 자동 차단 기능으로 보안을 강화합니다. 모든 출입 이력은 실시간으로 기록되며, 이상 출입 발생 시 즉시 관리자에게 푸쉬 알림이 전송됩니다. CCTV 연동 기능으로 현장 상황을 언제든지 확인하실 수 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                월 유지비 추가 요금은 어떻게 계산되나요?
+                                <svg class="faq-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>기본 월 이용료는 39,000원부터 시작하며, 관리 지점 수와 사용 기능에 따라 요금제가 달라집니다. 초기 설치비는 무료이며, 하드웨어 유지보수 비용도 월 이용료에 포함되어 별도 청구되지 않습니다. 자세한 요금 안내는 1:1 도입 상담을 통해 확인하실 수 있습니다.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="faq-question" aria-expanded="false">
+                                계약 기간이 있나요?
+                                <svg class="faq-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </button>
+                            <div class="faq-answer">
+                                <p>최소 계약 기간 없이 월 단위로 이용 가능합니다. 언제든 해지할 수 있으며 위약금도 없습니다. 부담 없이 시작하고 직접 효과를 경험해 보세요.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 10. Final CTA -->
+            <section class="cta-final">
+                <div class="centerbox">
+                    <p class="cta-label">지금 신청하면 설치비 무료 + 첫 달 50% 할인</p>
+                    <h2>인건비 걱정 없는 무인 운영,<br><span>오늘 바로 시작할 수 있습니다.</span></h2>
+                    <div class="btn-box">
+                        <a class="btn-b" href="#">지금 무료 상담 신청</a>
+                        <a class="btn-w" href="#cases">도입 사례 더 보기</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="centerbox">
+                <p class="logo"><img src="images/entro-logo.svg" alt="Entro"></p>
+                <div class="content">
+                    <ul class="menu">
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용안내</a></li>
+                    </ul>
+                    <ul class="call">
+                        <li>고객상담 대표번호</li>
+                        <li>090-551-8200</li>
+                    </ul>
+                    <ul class="address">
+                        <li>서울시 강남구 봉은사로 102</li>
+                        <li>TEL 02)550-8800</li>
+                        <li>대표이사 김재현</li>
+                    </ul>
+                    <ul class="close">
+                        <li>Copyrightⓒ 2025 ENTRO CO.,LTD. All rights reserved.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <button id="scroll-top" class="scroll-top-btn" aria-label="페이지 상단으로 이동">↑</button>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/action.js"></script>
+</body>
+
+</html>
