@@ -21,7 +21,7 @@ if (scrollTopBtn) {
 /* 로봇 — 사인파 경로 + 각도 */
 const robot = document.getElementById('robot');
 let prevX = 120;
-let prevY = 85;
+let prevY = 150;
 
 function updateRobot(biyul) {
     if (!robot) return;
@@ -36,7 +36,7 @@ function updateRobot(biyul) {
 
     const blend = Math.min(biyul / 0.15, 1);
     const x = 120 + (targetX - 120) * blend;
-    const y = 85 + (targetY - 85) * blend;
+    const y = 150 + (targetY - 150) * blend;
 
     const dx = x - prevX;
     const dy = y - prevY;
@@ -70,7 +70,7 @@ if (heroContent) {
     });
 }
 
-/* 카운트업 (Stats + Trust) */
+/* Stats/Trust 카운트업 — easeOutCubic 이징, 뷰포트 진입 시 1회 실행 */
 function formatNumber(num) {
     return num.toLocaleString('ko-KR');
 }
@@ -78,11 +78,6 @@ function formatNumber(num) {
 function animateCountEl(el) {
     const target = parseFloat(el.dataset.target);
     const decimal = parseInt(el.dataset.decimal || '0', 10);
-
-    /* 최대값 기준으로 너비 미리 고정 */
-    const maxText = decimal > 0 ? target.toFixed(decimal) : formatNumber(target);
-    // el.textContent = maxText;
-    // el.style.width = el.getBoundingClientRect().width + 'px';
     el.style.display = 'inline-block';
     el.textContent = decimal > 0 ? '0.0' : '0';
 
@@ -105,7 +100,6 @@ function animateCountEl(el) {
             el.textContent = decimal > 0 ? target.toFixed(decimal) : formatNumber(target);
         }
     }
-
     requestAnimationFrame(step);
 }
 
@@ -129,7 +123,7 @@ function observeAndCount(sectionSelector, itemSelector) {
 observeAndCount('.stats-banner', '.stat-number');
 observeAndCount('.trust-numbers', '.trust-count');
 
-/* Tab UI + Bento 카드 페이드인 */
+/* 탭 전환 시 Bento 카드 순차 페이드인 */
 function showBentoCards(panel) {
     panel.querySelectorAll('.bento-card').forEach((card, i) => {
         card.style.opacity = '0';
@@ -206,7 +200,7 @@ document.querySelectorAll('.faq-list li').forEach(item => {
     });
 });
 
-/* GNB 활성 섹션 표시 */
+/* GNB 활성 섹션 표시 — 스크롤 이벤트 대신 Observer로 성능 최적화 */
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('header .gnb a');
 
@@ -227,6 +221,7 @@ if (sections.length && navLinks.length) {
     sections.forEach(section => sectionObserver.observe(section));
 }
 
+
 /* Solution 카드 — 터치 디바이스 대응 */
 if ('ontouchstart' in window) {
     document.querySelectorAll('.solution-card').forEach(card => {
@@ -239,6 +234,8 @@ if ('ontouchstart' in window) {
         });
     });
 }
+
+
 
 /*헤더 + 스크롤 버튼 + 로봇 */
 window.addEventListener('scroll', () => {
