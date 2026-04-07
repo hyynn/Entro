@@ -29,10 +29,11 @@ function updateRobot(biyul) {
     const vw = window.innerWidth;
     const vh = window.innerHeight;
     const amplitude = vw * 0.35;
-    const frequency = 6;
+    const freqX = 6;
+    const freqY = 9;
 
-    const targetX = vw / 2 + amplitude * Math.sin(biyul * Math.PI * 6);
-    const targetY = vh * 0.4 + vh * 0.2 * Math.cos(biyul * Math.PI * 9);
+    const targetX = vw / 2 + amplitude * Math.sin(biyul * Math.PI * freqX);
+    const targetY = vh * 0.4 + vh * 0.2 * Math.cos(biyul * Math.PI * freqY);
 
     const blend = Math.min(biyul / 0.15, 1);
     const x = 120 + (targetX - 120) * blend;

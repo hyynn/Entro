@@ -48,7 +48,7 @@ p {font-weight: 400; font-size: clamp(14px, 0.94vw, 18px); color: var(--textC2);
 .btn-box {display: flex; gap: 16px; justify-content: center; margin-top: 48px;}
 
 /* 로봇 */
-#robot {position: fixed; pointer-events: none; z-index: 100; width: 50px; will-change: left, top, transform;}
+#robot {position: fixed; pointer-events: none; z-index: -1; width: 50px; will-change: left, top, transform;}
 
 
 /* HEADER */
